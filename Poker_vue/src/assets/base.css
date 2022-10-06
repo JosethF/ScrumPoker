@@ -1,0 +1,484 @@
+body{
+    margin: 0;
+    letter-spacing: .04em;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    overflow-x: hidden;
+}
+header {
+    width: 98%;
+    margin: auto;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+form{
+    width: 100%;
+}
+input{
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+button{
+    height: 2.5rem;
+    padding: 0.3rem;
+    background-color: #0d6efd;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: all .09s linear;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+}
+button:hover{
+    background-color: #0b5ed7;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #74b3ff;
+}
+table{
+    margin: auto;
+    width: 80%;
+    border: 0.15rem solid;
+    border-color: #dee2e6;
+}
+th, td{
+    padding: 0.40rem;
+    border: 0.1rem solid;
+    border-color: #dee2e6;
+}
+td{
+    text-align: left;
+}
+.menu-container {
+    top:0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    background-color: #fff;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    margin:auto;
+    font-weight: bold;
+    font-size: 1em;
+}
+header, .right > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right > ul{
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding-right: 2.5rem;
+}
+.left{
+    width:22rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left > h1{
+    font-size: 1.9rem;
+    margin-top: auto;
+}
+.left > a {
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+.left > a > img{
+    width: 100%;
+}
+.right{
+    width: 30rem;
+}
+.button-mod{
+    height: 3em;
+    width: 35%;
+    padding: 0.3em;
+    background-color: #3993ff;
+    align-items: center;
+    border-radius: .8rem;
+    display: inline-flex;
+    cursor: pointer;
+    letter-spacing: .02em;
+    transition: all .09s linear;
+}
+.button-mod:hover{
+    background-color: #74b3ff;
+}
+.button-mod > li {
+    list-style: none;
+    margin: auto;
+}
+.button-mod > li > a {
+    color: white;
+    font-weight: bold;
+}
+.container{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
+    margin: auto;
+}
+.container > h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.container > p{
+    font-size: 1.8rem;
+}
+.data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem !important;
+}
+.data > label{
+    margin-bottom: .5rem !important;
+}
+.space{
+    height: 4rem;
+}
+
+.pops{
+    text-align: center;
+    background-color: #0d6efd;
+    width:12rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.pops > p{
+    color: white;
+}
+
+article{
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.info{
+    width: 40rem;
+    text-align: center;
+    margin: auto;
+}
+
+.info > h1 {
+    font-size: 3rem;
+}
+
+.info > .button-mod{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+article> .img{
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back-popup{
+    top: 0;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0,0.5);
+}
+
+.window-export{
+    width: 90%;
+    height: 85%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.head-export{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.head-export > h1{
+    width: 90%;
+}
+
+.export-symbols{
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+}
+
+.symbols{
+    width: 4rem;
+    margin: auto;
+    border: 1px solid hsla(204,6%,68%,.4);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.symbols:hover{
+    box-shadow: 0 2px 4px hsla(204,6%,68%,.4);
+    background-color: #f3f4f7;
+    transition: all .09s linear;
+    cursor: pointer;
+}
+
+.symbols > p{
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.titulo a{
+    cursor: pointer;
+}
+.reload{
+    font-family: Lucida Sans Unicode,
+}
+
+.button-mod > li > i {
+    font-size: 170%;
+    color: white ;
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+}
+
+.show-issues{
+    position: absolute;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: #fff;
+    border-top: 0.3rem solid;
+    border-left: 0.3rem solid;
+    border-bottom: 0.3rem solid;
+    border-color: #dee2e6;
+    bottom: 0;
+    max-width: 100%;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.show-issues > .issueshead{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+
+.symbols-issues{
+    margin: auto;
+    margin-right: 0;
+    height: 50%;
+    width: 10%;
+    border: 1px solid hsla(204,6%,68%,.4);
+    border-radius: 1.5rem;
+}
+
+.symbols-issues:hover{
+    box-shadow: 0 2px 4px hsla(204,6%,68%,.4);
+    background-color: #f3f4f7;
+    transition: all .09s linear;
+    cursor: pointer;
+}
+
+.symbols-issues > p {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.dentro{
+    width: 90%;
+    margin: auto;
+}
+.top{
+    display: flex;
+    flex-direction: top;
+    width: 100%;
+}
+.top > i{
+    margin: auto;
+}
+.dentro > .data {
+    width: 100%;
+}
+.show-issues > .dentro > .issues > table{
+    width: 25rem;
+    margin-bottom: 1rem;
+}
+
+.centergame{
+    margin: auto;
+    height: 30rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.centergame > .reveal{
+    margin: auto;
+    background-color: #d7e9ff;
+    border-style: solid;
+    border-color: #87b4ec;
+    border-radius: 0.8rem;
+    width: 70%;
+    height: 30%;
+    margin-bottom: 2rem;
+}
+
+.centergame > .reveal > p {
+    line-height: 6rem;
+}
+
+.centergame > .reveal > .button-mod {
+    margin-top: 13%;
+}
+
+.centergame > .card{
+    margin: auto;
+    height: 40%;
+    width: 30%;
+}
+
+.centergame > .singlecard > #card{
+    background: linear-gradient(45deg,#3993ff 12%,transparent 0,transparent 88%,#3993ff 0),linear-gradient(135deg,transparent 37%,#1a7bf2 0,#1a7bf2 63%,transparent 0),linear-gradient(45deg,transparent 37%,#3993ff 0,#3993ff 63%,transparent 0),#74b3ff;
+    background-size: auto, auto, auto, auto;
+    background-size: 17px 17px;
+    border: 1px solid hsla(204,6%,68%,.4);
+    border-radius: .6rem;
+    box-shadow: 0 2px 4px hsla(204,6%,68%,.4);
+    height: 6rem;
+    width: 3.5rem;
+    margin: auto;
+}
+
+.centergame > .singlecard > #cardspace{
+    background: #a9aeb266;
+    border: 1px solid hsla(204,6%,68%,.4);
+    border-radius: .6rem;
+    box-shadow: 0 2px 4px hsla(204,6%,68%,.4);
+    height: 6rem;
+    width: 3.5rem;
+    margin: auto;
+}
+
+.centergame > .singlecard > img{
+    width: 30%;
+}
+
+.centergame > .singlecard > p{
+    font-weight: bold;
+}
+
+.footer-cards{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 2rem;
+}
+
+.footer-cards > .layercard{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-cards > .layercard > .card{
+    height: 6rem;
+    width: 3.5rem;
+    border: 2px solid #3993ff;
+    cursor: pointer;
+    transition: all .09s linear;
+    border-radius: .8rem;
+    margin: auto;
+}
+
+.footer-cards > .layercard > .card:hover{
+    background-color: #ebf4ff;
+}
+
+.footer-cards > .layercard > .card > p{
+    color: #3993ff;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 2rem
+}
+
+.show-issues > form > .data{
+    margin: auto;
+    width: 80%;
+}
+
+.data > #select-input{
+    display: flex;
+}
+
+.data > #select-input > select{
+    width: 25%;
+}
+.data > #select-input > input{
+    width: 75%;
+}
+
+.back-message{
+    top: 0;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.767);
+}
+.message{
+    width: 20rem;
+    height: 7.25rem;
+    margin-top: 15.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d7e9ff;
+    border-style: solid;
+    border-color: #87b4ec;
+    border-radius: 0.8rem;
+    overflow: auto;
+    padding-top: 1rem;
+    text-align: center;
+}
